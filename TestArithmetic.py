@@ -18,6 +18,19 @@ class MyTestCase(unittest.TestCase):
         subtraction = Arithmetic.Subtraction(a, b, c)
         assert subtraction == -4
 
+    def test_Multiplication(self):
+	a = 2
+	b = 3
+	c = 4
+	multiplication = Arithmetic.Multiplication(a, b, c)
+	assert multiplication == 24
+
+    def test_Division(self):
+	a = 10
+	b = 2
+	c = 5
+	division = Arithmetic.Division(a, b, c)
+	assert division == 1
 
 if __name__ == '__main__':
     unittest.main()
